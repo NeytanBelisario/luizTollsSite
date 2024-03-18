@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: termina;
+    src: url(../TerminaTest/TerminaTest-Demi.otf);
+}
+
+body {
+    background-color: #09040f;
+    background-image: linear-gradient(360deg, #09040f, rgba(0, 0, 0, .5)), linear-gradient(140deg, #ee0c0c, #ff9659 22%, #d73802 38%, #2b2b2b 57%, #011c34 75%, #000);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 730px;
+}
+main{
+    max-width: 1143px;
+    margin: auto;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-family: termina, sans-serif;
+    color: #fff;
+    font-size: 64px;
+    line-height: 120%;
+}
+.texto-inicio-1{
+    color: rgb(255, 150, 89);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    max-width: 500px;
+}
+.texto-inicio-2{
+    color: rgb(255, 150, 89);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+#botaoInicio:hover{
+    background-color: #ee0c0c !important;
+    box-shadow: 0 5px 10px 0 rgba(106, 89, 255, 0.2);
+    -webkit-transform: translate(0px, -2px);
+    -ms-transform: translate(0px, -2px);
+    transform: translate(0px, -2px);
+}
+.bi-whatsapp::before{
+    margin-top: 17px;
+    margin-left: 1px;
+}
+header{
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+    max-width: 1146px;
+    height: 39px;
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+.navbar{
+    width: 100%;
+}
+.navbar-light .navbar-toggler-icon{
+    display: none;
+}
+ul{
+    float: right;
+}
+.navbar-expand-lg .navbar-nav {
+    position: absolute;
+    right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: -10px;
+    transition: .3s;
+
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff9659;
+    transition: .3s;
+
+}
+.navbar-light .navbar-nav .nav-item:nth-child(1) .nav-link {
+    color: #ff9659;
+    padding: 8px 0px 2px 0px;
+    text-shadow: 0 1px 6px rgba(237,198,255,.5);
+    margin: 0;
+    margin-top: -10px;
+    transition: .3s;
+
+}
+
+.li_nav{
+    padding: 0px 20px;
+    margin-bottom: 11px;
+}
+
+.first_li{
+    padding: 0px 20px;
+}
+.li-end{
+    padding-left: 20;
+    padding-right: 5px;
+}
+.first_li > a{
+    padding: 5px 0px;
+    color: #ff9659;
+    border-bottom: 2px solid #ff9659;
+    text-decoration: none;
+    transition: .3s;
+}
+.texto-segunda{
+    color: rgb(255, 150, 89);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+h2{
+    font-family: termina, sans-serif;
+}
+.card-cursos{
+    padding: 32px;
+    border: 1px solid #28263a;
+    border-radius: 8px;
+    background-color: #181628;
+}
+.bolaCursos{
+    border-radius: 100px;
+    background-color: #2b2b2b;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+}
+#emoji{
+    font-size: 32px;
+    line-height: 32px;
+}
+.row{
+    --bs-gutter-x: 0 !important;
+}
+#colecaoCards{
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 991px) {
+    main{
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    header{
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    .navbar-light .navbar-toggler-icon{
+        display: inline;
+    }
+    #colecaoCards{
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 695px) {
+    #colecaoCards{
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
